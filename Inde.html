@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Control</title>
+
+<!-- this is a google font link -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+ 
+<!-- This is a css external link -->
+<link rel="stylesheet" href="index.css">
+</head>
+
+
+<body class="font">
+<div class="form">
+
+<!-- This is a header section -->
+    <legend class="hd">
+   <h1>Product Pick</h1>
+    </legend>
+
+
+
+<!-- This is a main section -->
+    <main>
+    <form>
+        <fieldset>
+        <div class="all">
+     <div>
+        <label class="blk" for="nam">First Name* </label>
+        <input type="text" id="nam" name="name" placeholder="Enter Your Name" pattern=".*\S.*\S.*" required >
+     </div> 
+     <br>
+
+    <div>
+        <label class="blk" for="nams">Last Name* </label>
+        <input type="text" id="nams" name="name" placeholder="Enter Your Name" pattern=".*\S.*\S.*" required >
+     </div> 
+
+     <br>
+
+          <div>
+        <label class="blk" for="mail">Email* </label>
+        <input type="email" id="mail" placeholder="Enter Your Email" name="Email" required>
+     </div>
+
+      <br>
+
+     <div class="AllClr">
+        <label class="blk" for="clr"> T-shirt Color*</label>
+        <select  name="Color" id="clr" required>
+            <option value="red">-- Select a color -- </option>
+            <option value="red">Red</option>
+            <option value="blue"> Blue</option>
+            <option value="yellow">Yellow</option>
+        </select>        
+     </div>
+
+    <br>
+
+     <div>
+        <label class="blk" for="sz"> T-shirt Size*</label>
+        <select  name="Size" id="sz" required>
+            <option value="red">-- Select a color -- </option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+        </select>
+
+        <button class="btn" type="submit"> Submit </button>
+     </div>
+</div>
+</fieldset>
+    </form>
+    </main>
+
+
+
+
+
+<!-- This is a footer section -->
+    <footer>
+  <p>All rights reserved</p>
+    </footer>
+    
+</div>
+
+</body>
+</html>
